@@ -45,6 +45,7 @@ app.get("/auth", (req, res) => {
     access_type: "offline",
     scope: ["https://www.googleapis.com/auth/business.manage"],
   });
+  console.log(url);
   res.status(200).json({ url });
 });
 
